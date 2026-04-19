@@ -1,0 +1,45 @@
+    <style>
+    /* RESET */
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* BASE STYLES */
+    body {
+        background-color: #FFFAFA; 
+        font-family: ‘Open Sans’, sans-serif;
+        line-height: 1.6;
+    }
+
+    h1 {
+        padding: 20px;
+        color: #6A0DAD;
+        font-family: ‘Montserrat’, sans-serif;
+    }
+
+    /* NAVIGATION */
+    header {
+        background-color: #6A0DAD; 
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #4BB543;
+    }
+</style>
