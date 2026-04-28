@@ -4,7 +4,7 @@ Student Information
 Name: Siyabonga Andile Mbele
 Student Number: ST10502601
 Campus: Rosebank College 
-Course: Web Development (Introduction) [WEDE5020]
+Course: Web Development (Introduction) [WEDE5020w]
 
 
 Project Overview
