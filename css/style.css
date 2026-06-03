@@ -96,7 +96,7 @@ main img {
     border-radius: 8px;       
 }
 
-  background: url(‘../images/hero.jpg’) no-repeat center center/cover;
+  background: url(‘Desktop/Assurance_Web_Project/images/family’) no-repeat center center/cover;
   height: 80vh;
   display: flex;
   align-items: center;
