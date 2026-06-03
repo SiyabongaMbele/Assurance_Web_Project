@@ -1,43 +1,227 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ===== Reset Styles ===== */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* ===== Global Styles ===== */
 body {
-       background-color: #FFFAFA; 
-       font-family: 'Open Sans', sans-serif;
-       line-height: 1.6;
-       color: #333;
+  font-family: ‘Inter’, ‘Open Sans’, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #FFFAFA; /* Snow White background */
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #6A0DAD; 
-    margin-bottom: 20px;
+  font-family: ‘Montserrat’, sans-serif;
+  font-weight: 700;
+  color: #6A0DAD; /* Vivid Purple headings */
+  margin-bottom: 1rem;
 }
 
+P {
+  margin-bottom: 1rem;
+}
+
+/* ===== Navigation ===== */
 header {
-    background-color: #6A0DAD; 
-    padding: 20px 0;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  background-color: #6A0DAD;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 nav ul {
-    list-style: none; 
-    display: flex;  
-    justify-content: center; 
-    gap: 30px;        
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
 }
 
-nav ul li a {
-    text-decoration: none; 
-    color: white;          
-    font-weight: bold;
-    font-family: ‘Montserrat’, sans-serif;
-    Transition: 0.3s;      
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
 }
 
-nav ul li a:hover {
-    color: #4BB543; 
+nav a:hover {
+  background-color: #4BB543; /* Security Green hover */
+  border-radius: 4px;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #4BB543;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #3a9436;
+}
+
+/* ===== Layout ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Homepage ===== */
+.hero {
+  background: url(‘../images/hero.jpg’) no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #6A0DAD;
+}
+
+/* ===== About Page ===== */
+.about-section {
+  Padding: 40px;
+  Background-color: #FFFAFA;
+}
+
+.team-profile {
+  display: flex;
+  gap: 20px;
+}
+
+.team-profile img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+/* ===== Services Page ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  color: #4BB543;
+}
+
+/* ===== Knowledge Hub ===== */
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.blog-post h2 {
+  color: #6A0DAD;
+}
+
+.blog-post a {
+  color: #4BB543;
+  text-decoration: none;
+}
+
+/* ===== Get a Quote ===== */
+.quote-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.quote-form input, .quote-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.quote-form button {
+  background-color: #6A0DAD;
+  color: #fff;
+}
+
+/* ===== Enquiry Page ===== */
+.enquiry-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #FFFAFA;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.enquiry-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.enquiry-form button {
+  background-color: #4BB543;
+  color: #fff;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header, nav, main, footer {
+    padding: 10px;
+  }
 }
