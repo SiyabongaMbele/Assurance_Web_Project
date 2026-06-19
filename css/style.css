@@ -244,3 +244,19 @@ main img {
     padding: 10px;
   }
 }
+
+
+nav a, nav a:visited {
+    color: white !important;       
+    text-decoration: none;         
+    padding: 12px 20px;            
+    display: inline-block;         
+    font-family: 'Montserrat', sans-serif; /* Keeps your chosen typography clean */
+    transition: background 0.3s ease;
+}
+
+/* Optional: Add a smooth hover effect so users know they can click them */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Sleek light hover background */
+    border-radius: 4px;
+}
