@@ -38,9 +38,10 @@ nav ul {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px; /
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+}
 }
 
 nav a:hover {
