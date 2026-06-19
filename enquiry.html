@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Enquiry | Assurance</title>
-	<link rel="stylesheet" href="C:/Users/Student/OneDrive - University of KwaZulu-Natal/Desktop/Assurance_Web_Project/css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit an Enquiry | Connect Directly with the Assurance Team</title>
+    <meta name="description" content="Have a unique tracking or device protection query? Submit an official system enquiry, and our specialized agents will customize a clear response package.">
+    <meta name="keywords" content="contact assurance, customer support channels, policy questions, help tracking claim status">
+    <meta property="og:title" content="Connect with Assurance | System Support Enquiries">
+    <meta property="og:description" content="Drop our team an enquiry message for zero-hassle guidance and rapid policy feedback.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Assurance</h1>
-
     <header>
-    <nav>
-        <ul>
-            <li><a href=”index.html”>Home</a></li>
-            <li><a href=”about.html”>About Us</a></li>
-            <li><a href=”services.html”>Services</a></li>
-            <li><a href=”knowledge-hub.html”>Knowledge Hub</a></li>
-            <li><a href=”get-a-quote.html”>Get a Quote</a></li>
-            <li><a href=”enquiry.html”>Enquiry</a></li>
-        </ul>
-    </nav>
+        <nav>
+           <ul>
+             <li><a href=”index.html”>Home</a></li>
+             <li><a href=”about.html”>About Us</a></li>
+             <li><a href=”services.html”>Services</a></li>
+             <li><a href=”knowledge-hub.html”>Knowledge Hub</a></li>
+             <li><a href=”get-a-quote.html”>Get a Quote</a></li>
+             <li><a href=”enquiry.html”>Enquiry</a></li>
+           </ul>
+        </nav>
     </header>
 
-
-    <hr>  
- 
-
+    <main>
     <h2>General Enquiries</h2>
-    <p>Have a question? Send us a message.</p>
+    <p>Have a question? Send us a message and our team will get right back to you.</p>
 
-    <form>
-        <p>Email: <input type=”email”></p>
-        <p>Message:<br>
-        <textarea rows=”4” cols=”30”></textarea></p>
-        <p><button type=”button”>Send Enquiry</button></p>
-    </form>
+   <form action="#" method="POST" class="quote-form">
+            <p>
+                <label for="username">Full Name:</label><br>
+                <input type="text" id="username" name="username" required>
+            </p>
+            
+            <p>
+                <label for="useremail">Email Address:</label><br>
+                <input type="email" id="useremail" name="useremail" required>
+            </p>
+            
+            <p>
+                <label for="enquiry-type">Type of Enquiry:</label><br>
+                <select id="enquiry-type" name="enquiry_type" required>
+                    <option value="">-- Please Select An Option --</option>
+                    <option value="services">Product & Service Information</option>
+                    <option value="volunteer">Volunteering / Sponsorship</option>
+                    <option value="support">Policy Support & Claims</option>
+                    <option value="other">General Query</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="usermessage">Message:</label><br>
+                <textarea id="usermessage" name="usermessage" rows="5" cols="40" required></textarea>
+            </p>
+            
+            <p>
+                <button type="submit" class="button">Send Enquiry</button>
+            </p>
+        </form>
 
-    <p><b>Our Office:</b> 123 Digital Way, Durban, South Africa</p>
-    <img src="images/enquiries.jpg" alt="ladywithheadphones" width=500; height=450>
-    <hr>
+        <p><b>Our Office:</b> 123 Digital Way, Durban, South Africa</p>
+        
+        <img src="images/enquiries.jpg" alt="Lady wearing headphones taking customer service call" width="500" height="450">
+    </main>
 
-    <p>Copyright 2026 – Assurance Inc.</p>
+    <footer>
+        <p>Copyright 2026 - Assurance Inc.</p>
+    </footer>
 
 </body>
 </html>
-

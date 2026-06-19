@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Get a Quote | Assurance</title>
-	<link rel="stylesheet" href="C:/Users/Student/OneDrive - University of KwaZulu-Natal/Desktop/Assurance_Web_Project/css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Cover Quote | Calculate Your Premium Protection Plan</title>
+    <meta name="description" content="Calculate your personalized insurance premiums instantly. Secure custom, cost-effective pricing structures for your car, smartphone, and family pet today.">
+    <meta name="keywords" content="get an insurance quote online, calculate premiums, phone protection estimation, quick car quote">
+    <meta property="og:title" content="Get an Assurance Quote | Instant Premium Estimates">
+    <meta property="og:description" content="Get clear pricing tailored to your actual budget instantly via our semantic quotation hub.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <h1>Assurance</h1>
-
-    <header>
+<header>
     <nav>
         <ul>
             <li><a href=”index.html”>Home</a></li>
@@ -20,46 +28,55 @@
             <li><a href=”enquiry.html”>Enquiry</a></li>
         </ul>
     </nav>
-    </header>
-
-   
-    <hr>
+</header>
 	
-    <img src="images/getaquote.jpg" alt="getaquote" width=600; height=400>
+<main>
+    <h1>Assurance</h1>
+	
+    <img src="images/getaquote.jpg" alt="getaquote" width="600" height="400">
 
     <h2>Get a Quick Quote</h2>
     <p>Fill in your details below and we will send you a price estimate.</p>
 
-    <form>
-        <p>First Name: <input type=”text” name=”firstname”></p>
-        <p>Surname: <input type=”text” name=”surname”></p>
-        <p>Contact Number: <input type=”tel” name=”phone”></p>
-        <p>Email Address: <input type=”email” name=”email”></p>
+    <form class="quote-form">
+        <label for="firstname">First Name:</label>
+		<input type="text" id="firstname" name="firstname" required>
+		
+		
+        <label for="surname">Surname:</label>
+		<input type="text" id="surname" name="surname" required>
+		
+        <label for="phone">Contact Number:</label>
+		<input type="tel" id="phone" name="phone" required>
+		
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+		
+        <label for="home-address">Home Address:</label>
+		<textarea id="home-address" name="home_address" rows="3" required></textarea>
+		
+        <label for="work-address">Work Address:</label>
+		<textarea id="work-address" name="work_address" rows="3"></textarea>
         
-        <p>Home Address:<br>
-        <textarea rows=”3” cols=”30”></textarea></p>
-        
-        <p>Work Address:<br>
-        <textarea rows=”3” cols=”30”></textarea></p>
-
-        <hr>
-
-        <p>What do you want to cover?</p>
-        <select>
-            <option>Car</option>
-            <option>Laptop</option>
-            <option>Cell Phone</option>
-            <option>Household</option>
-            <option>Pet</option>
-            <option>Life Cover</option>
+        <label for="cover-type">What do you want to cover?</label>
+		<select id="cover-type" name="cover_type" required>
+		    <option value="">-- Please Select An Option --</option>
+            <option value="car">Car Insurance</option>
+            <option value="laptop">Laptop Cover</option>
+            <option value="cellphone">Cell Phone</option>
+            <option value="household">Household Insurance</option>
+            <option value="pet">Pet Insurance</option>
+            <option value="life">Life Cover</option>
         </select>
-
-        <p><button type=”button”>Submit Request</button></p>
-    </form>
-    
+		
+		<button type="submit">Submit Request</button>
+	</form>
     <hr>
+</main>
 
+<footer>
     <p>Copyright 2026 – Assurance Inc.</p>
+</footer>
 
 </body>
 </html>
